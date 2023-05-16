@@ -10,9 +10,11 @@ def run() -> None:
 
     with open("input.csv", "r") as csv_input:
         reader = csv.reader(csv_input, delimiter=";")
+        print(reader)
 
         for row in reader:
             temp_csv.append(row)
+
     
     for i, element in enumerate(temp_csv):
         if len(element) == 0:
@@ -32,14 +34,6 @@ def run() -> None:
 
     if temp_csv[0] == ['DATE OPERATION', 'MONTANT', 'DEVISE', 'LIBELLE', 'INFO COMPLEMENTAIRE', 'DATE VALEUR']:
         del temp_csv[0]
-
-    print(account_number[8:16])
-    for elt in temp_csv:
-        print(elt)
-
-    for elt in temp_csv
-
-    
 
 if __name__ == "__main__":
     run()
