@@ -14,7 +14,7 @@ def create_csvable_list(raw_csv_data: list) -> list:
     ['DATE OPERATION', 'MONTANT', 'DEVISE', 'LIBELLE', 'INFO COMPLEMENTAIRE', 'DATE VALEUR', 'TYPE DE COMPTE', 'NUMERO DE COMPTE']
     """
     # 1) Modify the header line
-    header = ['DATE', 'PAYEE', 'MEMO', 'OUTFLOW', 'INFLOW', 'TYPE DE COMPTE', 'NUMERO DE COMPTE']
+    header = ['Date', 'Payee', 'Memo', 'Outflow', 'Inflow', 'TYPE DE COMPTE', 'NUMERO DE COMPTE']
     returned_data = list()
     returned_data.append(header)
 
